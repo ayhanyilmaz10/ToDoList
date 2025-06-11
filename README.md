@@ -15,9 +15,3 @@ This project is a basic version of a To Do List.
 
 ![mainscreen](https://github.com/user-attachments/assets/643acde7-e1db-4587-999c-a856b00d9727)
 
--A pop-up Warning Screen before Delete a note.
-#-Warning Screen-
-
-
-
-![warningscreen](https://github.com/user-attachments/assets/84220393-9d56-44e2-974d-ff0158c1e5c2)
