@@ -10,4 +10,4 @@ This project is a basic version of a To Do List.
 - Save the notes you want to add with the Save button.
 
 #-Main Screen-
-![Main Screen Photo](Screenshot/mainscreen.png)
+<img src="Screenshot/mainscreen.png" />
