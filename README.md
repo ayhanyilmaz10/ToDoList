@@ -10,4 +10,4 @@ This project is a basic version of a To Do List.
 - Save the notes you want to add with the Save button.
 
 #-Main Screen-
-<img src="[Screenshot/mainscreen.png](https://imgur.com/OPByda2)" />
+![mainscreen](https://github.com/user-attachments/assets/643acde7-e1db-4587-999c-a856b00d9727)
