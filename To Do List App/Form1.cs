@@ -46,13 +46,32 @@ namespace To_Do_List_App
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            try
+            // It is good practice to first check if there is a selected row.
+            // If no row is selected, we may get an error or perform the wrong operation.
+            if (toDoListView.CurrentCell == null)
             {
-                todoList.Rows[toDoListView.CurrentCell.RowIndex].Delete();
+                MessageBox.Show("Please select a note you want to delete.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            catch (Exception ex)
+
+            // Show the popup asking the user a confirmation question
+            DialogResult resul = MessageBox.Show("Are you sure you want to delete the selected note?", "Note Deletion Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            // Let's check the user's response
+            if (resul == DialogResult.Yes) //If user click on YES button
             {
-                Console.WriteLine("Error" + ex);
+                try
+                {
+                    todoList.Rows[toDoListView.CurrentCell.RowIndex].Delete();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error" + ex);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Deletion canceled", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
