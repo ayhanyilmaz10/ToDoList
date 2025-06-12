@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\Github\\ToDoList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{520DB56C-364C-4F33-B1A3-901DC47273C2}|To Do List App\\To Do List App.csproj|C:\\Projects\\Github\\ToDoList\\to do list app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{520DB56C-364C-4F33-B1A3-901DC47273C2}|To Do List App\\To Do List App.csproj|solutionrelative:to do list app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{520DB56C-364C-4F33-B1A3-901DC47273C2}|To Do List App\\To Do List App.csproj|c:\\projects\\github\\todolist\\to do list app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{520DB56C-364C-4F33-B1A3-901DC47273C2}|To Do List App\\To Do List App.csproj|solutionrelative:to do list app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{520DB56C-364C-4F33-B1A3-901DC47273C2}|To Do List App\\To Do List App.csproj|C:\\Projects\\Github\\ToDoList\\to do list app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{520DB56C-364C-4F33-B1A3-901DC47273C2}|To Do List App\\To Do List App.csproj|solutionrelative:to do list app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 386,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Projects\\Github\\ToDoList\\To Do List App\\Form1.cs",
               "RelativeDocumentMoniker": "To Do List App\\Form1.cs",
               "ToolTip": "C:\\Projects\\Github\\ToDoList\\To Do List App\\Form1.cs",
               "RelativeToolTip": "To Do List App\\Form1.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAA5wEkAAABvAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwEoAAAB/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T10:58:01.256Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Projects\\Github\\ToDoList\\To Do List App\\Form1.cs",
               "RelativeDocumentMoniker": "To Do List App\\Form1.cs",

@@ -48,21 +48,31 @@ namespace To_Do_List_App
         {
             // It is good practice to first check if there is a selected row.
             // If no row is selected, we may get an error or perform the wrong operation.
-            if (toDoListView.CurrentCell == null)
+            if (toDoListView.CurrentCell == null || toDoListView.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Please select a note you want to delete.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             // Show the popup asking the user a confirmation question
-            DialogResult resul = MessageBox.Show("Are you sure you want to delete the selected note?", "Note Deletion Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Are you sure you want to delete the selected note?", "Note Deletion Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             // Let's check the user's response
-            if (resul == DialogResult.Yes) //If user click on YES button
+            if (result == DialogResult.Yes) //If user click on YES button
             {
                 try
                 {
-                    todoList.Rows[toDoListView.CurrentCell.RowIndex].Delete();
+                    // Get the index of the selected row.
+                    // This is safe if CurrentCell is not null.
+                    int rowIndex = toDoListView.CurrentCell.RowIndex;
+                    // delete selected row from todoList DataTable
+                    // access DataRow with todoList.Rows[rowIndex].
+                    todoList.Rows[rowIndex].Delete();
+                    // Accept changes to update the view of the DataGridView
+                    // Without this the deleted row may not disappear visually.
+                    todoList.AcceptChanges();
+
+                    MessageBox.Show("Note deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
